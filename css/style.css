@@ -175,6 +175,7 @@ footer .copyright img{
 .bg-content ul li {
     border-bottom: max(1px, .1vw) groove rgba(255, 255, 255, 0.822);
     padding: max(15px, 1vw);
+    font-size: max(15px, 1.2vw);
 }
 
 .bg-content .selected {
@@ -318,7 +319,6 @@ footer .copyright img{
 
 .our-ventures {
     background-image: linear-gradient(to bottom, #1c1c1c 65%, white 10%);
-    height: 60vw;
     padding: max(20px, 2vw) 0;
 }
 
@@ -389,47 +389,92 @@ footer .copyright img{
     width: 100%;
 }
 
-.slide-img {
-    padding: 0 max(12px, 1vw);
+.slides-ventures .slick-slide {
+    margin: 0 max(10px, 1vw);
 }
 
-.slide-img .bg-img1 {
+.slide-wrapper {
+    height: max(43vw, 40vh);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-wrapper .slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 43vw;
+    transition: 1s;
 }
 
-.slide-img .bg-img1:hover {
-    background-size: 110%;
+.slide-wrapper .slide-bg:hover {
+    transform: scale(1.1);
 }
 
-.text-wrapper {
-    height: 100%;
-    color: white
-} 
+.toggle-arrow {
+    transition: 1s;
+}
+
+.slide-wrapper .slide-bg:hover .toggle-arrow{
+    opacity: 0;
+    display: none;
+}
     
-.text-slide {
+.slide-bg .text-wrapper {
+    color: white;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 40%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-}
-
-.text-slide h2 {
-    font-size: max(20px, 1.5vw);
     text-transform: capitalize;
 }
 
-.text-slide i {
+.slide-bg .text-wrapper .hidden-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1.5s;
+    height: 0;
+}
+
+.slide-wrapper .slide-bg:hover .hidden-text{
+    height: 38%;
+}
+
+.slide-bg .text-wrapper h2 {
+    font-size: max(20px, 1.5vw);
+}
+
+.slide-bg .text-wrapper i {
     font-size: max(10px, 1.1vw);
     margin: max(10px, 1vw) 0;
 }
 
-section.why-us {
-    margin: max(20px, 4vw) 0;
-    padding: max(20px, 2vw) 0;
+.slide-bg .text-wrapper p {
+    font-size: max(16px, 1vw);
+}
+
+.slide-bg .text-wrapper a {
+    font-size: max(20px, 2vw);
+    color: white;
+    text-decoration: none;
+    height: max(40px, 4vw);
+    width: max(40px, 4vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: max(1px, .1vw) solid white;
+    border-radius: 50%;
+    margin: max(10px, 1.5vw) 0;
 }
 
 .bars-gray {
