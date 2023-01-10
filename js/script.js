@@ -9,6 +9,14 @@ $(function(){
         slidesToShow: 3,
         prevArrow: '.left',
         nextArrow: '.right',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+        ]
     })
 
     $('.company-slide').slick({
