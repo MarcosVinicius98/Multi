@@ -639,7 +639,65 @@ section.company {
     left: 0;
 }
 
+/* Tela 3 */
+section.enterprises {
+    background-color: #1c1c1c;
+    padding-top: max(40px, 10vw);
+}
+section.enterprises h1 {
+    text-align: center;
+    color: white;
+    font-size: max(20px, 6vw);
+    padding-bottom: max(20px, 2vw);
+}
+section .enterprises-list .enterprises-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: max(200px, 70vw);
+    border-bottom: max(1px, .1vw) solid #494949;
+    list-style: none;
+}
+section .enterprises-list .enterprises-nav ul li{
+    padding: max(20px, 1vw) 0;
+}
+section .enterprises-list .enterprises-nav ul li a{
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;  
+    font-size: max(10px, 1vw);
+    padding: max(10px, 1.5vw) ;
+    
+}
+section .enterprises-list .enterprises-nav ul .actived  {
+    border-bottom: max(1px, .2vw) solid #c41a1c;
+}
+section .enterprises-list .enterprises-nav ul .actived  a {
+    color: white;
+}
+section .enterprises-list .all-enterprises{
+    display: flex;
+    flex-wrap: wrap;
+    padding: max(20px, 4.5vw) max(40px, 7vw) max(20px, 5vw) max(40px, 7vw);
+}
+section .enterprises-list .all-enterprises .bg-enterprises{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43vw;
+    width: 30%;
+    margin: max(10px, .5vw);
+}
+section .enterprises-list .all-enterprises .bg-enterprises h2{
+    font-size: max(12px, 1vw);
+}
 
+
+
+
+
+/* Tela 3 */
 
 /* Tela 5 */
 .text-info{
@@ -835,5 +893,3 @@ section.form-contact form input[type=file]{
     color: white;
 }
 
-
-/* Testando outra teoria */
