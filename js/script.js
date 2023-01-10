@@ -16,4 +16,13 @@ $(function(){
         prevArrow: '.company-left',
         nextArrow: '.company-right',
     })
+
+    $('.slides-gallery').slick({
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding:'10vw',
+        prevArrow: '.gallery-left',
+        nextArrow: '.gallery-right',
+    })
+
 })
