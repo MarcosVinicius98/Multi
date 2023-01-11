@@ -815,11 +815,65 @@ section .enterprises-list .all-enterprises{
     padding: max(20px, 2vw) 0;
 }
 
-
-
-
-
 /* Tela 3 */
+
+/*Tela 4*/
+
+section.enterprise-bg {
+    min-height: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+section.enterprise-bg h1 {
+    width: 100%;
+    font-size: max(30px, 5vw);
+    color: white;
+}
+
+section.enterprise-bg .list-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: -3vw;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+section.enterprise-bg ul {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: max(8px, 1.5vw);
+    border-radius: max(10px, .8vw);
+}
+
+section.enterprise-bg ul li {
+    padding: max(8px, 1vw) max(8px, 3vw);
+    border-right: max(1px, .1vw) solid #494949;
+    font-size: max(14px, .8vw);
+}
+
+section.enterprise-bg ul li:nth-last-of-type(1) {
+    border: none;
+}
+
+section.enterprise-bg ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Tela 4*/
+
+
 
 /* Tela 5 */
 .text-info{
