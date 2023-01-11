@@ -17,13 +17,13 @@ $(function(){
               }
             },
         ]
-    })
+    });
 
     $('.company-slide').slick({
         slidesToShow: 4,
         prevArrow: '.company-left',
         nextArrow: '.company-right',
-    })
+    });
 
     $('.slides-gallery').slick({
         slidesToShow: 1,
@@ -31,6 +31,12 @@ $(function(){
         centerPadding:'10vw',
         prevArrow: '.gallery-left',
         nextArrow: '.gallery-right',
+    });
+
+    $('.features-slick').slick({
+        slidesToShow: 1,
+        prevArrow: '.features-left',
+        nextArrow: '.features-right'
     })
 
 })

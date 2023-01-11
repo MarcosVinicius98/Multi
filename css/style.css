@@ -870,6 +870,78 @@ section.enterprise-bg ul li a {
     text-decoration: none;
     text-transform: uppercase;
 }
+section.features {
+    min-height: 50vw;
+    padding: max(40px, 5vw) 0;
+}
+
+section.features .features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-wrapper .features-img {
+    width: 52%;
+    height: 65vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.features-wrapper .features-img img {
+    width: 100%;
+}
+
+.features-wrapper .features-text {
+    position: relative;
+    width: 40%;
+    padding: max(20px, 5vw) 0;
+    margin: max(30px, 4.5vw) 0;
+    background-color: #1c1c1c;
+}
+
+.features-wrapper .features-content {
+    padding-left: max(20px, 4vw);
+}
+
+.features-wrapper .features-text h2 {
+    padding-bottom: max(25px, 2vw);
+    font-size: max(20px, 2.9vw);
+    color: white;
+}
+
+.features-wrapper .features-text ul {
+    padding: max(15px, 2vw) 0;
+    list-style: circle;
+    color: gray;
+}
+
+.features-wrapper .features-text ul li {
+    font-size: max(10px, 0.9vw);
+}
+
+.features-wrapper .features-text h3 {
+    text-transform: uppercase;
+    font-size: max(20px, 1.2vw);
+    letter-spacing: max(1px, .2vw);
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.features-wrapper .features-arrows {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 38%;
+    right: 0;
+    font-size: max(20px, 1vw);
+    color: white;
+}
+
+.features-wrapper .features-arrows .features-left, .features-right {
+    padding: max(15px, 1.2vw);
+    margin: max(10px, .4vw) 0;
+    border: max(1px, .1vw) solid white;
+}
 
 /*Tela 4*/
 
