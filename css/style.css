@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main ul {
     list-style: none;
 }
 
@@ -831,7 +834,9 @@ section.enterprise-bg {
 }
 
 section.enterprise-bg h1 {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
     font-size: max(30px, 5vw);
     color: white;
 }
@@ -858,7 +863,7 @@ section.enterprise-bg ul {
 section.enterprise-bg ul li {
     padding: max(8px, 1vw) max(8px, 3vw);
     border-right: max(1px, .1vw) solid #494949;
-    font-size: max(14px, .8vw);
+    font-size: max(14px, 1vw);
 }
 
 section.enterprise-bg ul li:nth-last-of-type(1) {
@@ -941,6 +946,120 @@ section.features .features-wrapper {
     padding: max(15px, 1.2vw);
     margin: max(10px, .4vw) 0;
     border: max(1px, .1vw) solid white;
+}
+
+section.enterprise-info {
+    padding: max(30px, 3vw) 0;
+}
+
+section.enterprise-info .container {
+    max-width: max(600px, 72%);
+}
+
+.enterprise-info .enterprise-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.enterprise-info .enterprise-details .wrapper {
+    margin-bottom: max(10px, 1vw);
+}
+.enterprise-info .enterprise-details span {
+    font-weight: bolder;
+    font-size: max(20px, 1.5vw);
+    padding-right: max(5px, .5vw);
+}
+
+.enterprise-info .enterprise-details i {
+    font-size: max(20px, 1.5vw);
+}
+
+.enterprise-info .enterprise-details p {
+    font-size: max(15px, 1.3vw);
+}
+
+.enterprise-info .enterprise-progress {
+    margin: max(30px, 3vw) 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.enterprise-info .enterprise-progress h2 {
+    width: 20%;
+    font-size: max(22px, 2.5vw);
+}
+
+.enterprise-info .enterprise-progress .progress-bars {
+    width: 60%;
+}
+
+.progress-bars .bar-wrapper {
+    margin-bottom: max(10px, 1vw);
+}
+
+.progress-bars .bar-wrapper .type-progress{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: max(5px, .8vw);
+}
+
+.progress-bars .progress-base {
+    width: 100%;
+    height: max(2px, .2vw);
+    background-color: #ccc;
+}
+
+.progress-bars .progress-base .total-progress {
+    background-color: red;
+    height: 100%;
+}
+
+.enterprise-info .time-line .line-point {
+    border-left: max(1px, .1vw) dashed #ccc;
+    display: flex;
+    align-items: center;
+    margin-left: max(10px, 1vw);
+}
+
+.enterprise-info .time-line .point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: max(14px, 1.4vw);
+    height: max(14px, 1.4vw);
+    border-radius: 50%;
+    border: max(1px, .1vw) solid #ccc;
+    position: relative;
+    right: max(7px, .7vw);
+}
+
+.time-line .point .black-point {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.line-point .time-data{
+    margin: max(15px, 1.5vw) 0;
+}
+
+.line-point .time-data p {
+    font-size: max(12px, 1vw);
+    padding-bottom: max(5px, .5vw);
+}
+
+.line-point .time-data span {
+    font-size: max(12px, 1vw);
+    color: red;
+    font-weight: bold;
+}
+
+.enterprise-info .enterprise-img img{
+    width: 100%;
 }
 
 /*Tela 4*/
