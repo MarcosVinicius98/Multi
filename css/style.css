@@ -35,21 +35,20 @@ header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: max(600px, 98vw);
+    width: max(600px, 97vw);
     padding: 0 max(15px, 2vw);
     padding-top: max(20px, 2.5vw);
-    /* margin: 0 auto; */
 }
 
 .logo {
-    background-image: url('../images/logo-multi.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: max(40px, 4vw);
-    width: max(150px, 12vw);
+    width: max(150px, 14vw);
 }
 
 header .open-menu {
+    cursor: pointer;
     color: white;
     font-size: max(16px, 2vw);
 }
@@ -150,10 +149,12 @@ footer .copyright img{
     background: #1c1c1c;
 }
 
-.bg-clip video{
+.bg-clip .bg-cover{
     width: 74%;
     min-height: 60vw;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-clip .bg-content {
@@ -170,6 +171,7 @@ footer .copyright img{
     left: 30%;
     top: max(15px, 2.5vw);
     list-style: none;
+    z-index: 2;
 }
 
 .bg-content ul li {
@@ -306,13 +308,19 @@ footer .copyright img{
 }
 
 .about-us {
+    padding: max(20px, 4vw) 0;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.about-us .container {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .about-us p{
-    width: 80%;
-    padding: max(20px, 9vw);
+    width: 70%;
     font-size: max(15px, 1.8vw);
     font-weight: 550;
 }
@@ -520,8 +528,14 @@ footer .copyright img{
     border: max(1px, .1vw) solid #ccc;
 }
 
+.why-us .card-content .img-wrapper {
+    min-height: 8vw;
+    width: 50%;
+    display: flex;
+}
+
 .why-us .card-content img {
-    width: max(50px, 6vw);
+    width: 50%;
 }
 
 .why-us .card-content h3 {
@@ -547,10 +561,26 @@ section.releases .container {
 
 .releases .releases-img {
     width: 55%;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.releases .releases-img .wrapper {
+    width: max(100px, 10vw);
+    height: max(100px, 10vw);
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .releases .releases-img img {
-    width: 100%;
+    width: 40%;
 }
 
 .releases-text {
