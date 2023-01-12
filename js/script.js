@@ -37,6 +37,12 @@ $(function(){
         slidesToShow: 1,
         prevArrow: '.features-left',
         nextArrow: '.features-right'
+    });
+    $('.slides-enterprise').slick({
+        slideToShow: 1,
+        dots: true,
+        prevArrow: '.left-arrow',
+        nextArrow: '.right-arrow'
     })
 
 })

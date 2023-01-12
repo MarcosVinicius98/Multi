@@ -55,6 +55,17 @@ header .open-menu {
     color: white;
     font-size: max(16px, 2vw);
 }
+header nav.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 footer {
     background-position: center;
@@ -1062,6 +1073,126 @@ section.features .features-wrapper {
     margin: max(10px, .4vw) 0;
     border: max(1px, .1vw) solid white;
 }
+
+.enterprise-img .bg-gallery {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58vw;
+}
+section.gallery-enterprise {
+    position: relative;
+    margin: max(20px, 2vw) 0;
+}
+section.gallery-enterprise .gallery-text {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.575);
+    max-width: 30%;
+    padding: max(20px, 3vw);
+}
+section.gallery-enterprise .gallery-text h2{
+    font-size: max(14px, 1.2vw);
+    font-weight: bolder;
+}
+section.gallery-enterprise .gallery-text p {
+    font-size: max(12px, 1.1vw);
+    padding: max(13px, 1.4vw) 0;
+}
+section.gallery-enterprise .gallery-text .gallery-arrows {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+section.gallery-enterprise .gallery-text .gallery-arrows .slides-counter {
+    font-size: max(12px, 1.1vw);
+    padding-right: max(15px, 1.5vw);
+}
+section.gallery-enterprise .gallery-text .gallery-arrows i{
+    font-size: max(10px, .6vw);
+}
+section.gallery-enterprise .gallery-text .left-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(12px, 1.1vw);
+    height: max(15px, 2.8vw);
+    width: max(15px, 2.8vw);
+    border: max(1px, .1vw) solid black;
+    border-radius: 50%;
+    padding: max(10px, .3vw);
+    margin-right: max(10px, .8vw);
+}
+section.gallery-enterprise .gallery-text .right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(12px, 1.1vw);
+    height: max(15px, 2.8vw);
+    width: max(15px, 2.8vw);
+    border: max(1px, .1vw) solid black;
+    border-radius: 50%;
+    padding: max(10px, .3vw);
+    color: white;
+    background-color: black;
+}
+.slick-dotted ul{
+    display: flex !important;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    top: 54vw;
+    left: 45vw;
+}
+.slick-dotted li{
+    margin: 0 max(3px, .1vw);
+}
+.slick-dotted button:focus{
+    outline: transparent;
+}
+.slick-dotted li button{
+    width: max(10px, .5vw);
+    height: max(10px, .5vw);
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.575);
+    color: transparent;
+    cursor: pointer;   
+}
+li.slick-active button{
+    background: white;
+}
+.localization{
+    display: flex;
+    background-color: #f4f4f5;
+}
+.localization .text-localization{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.localization .text-localization .text-content{
+    width: 60%;
+}
+.localization .text-localization .text-content h2 {
+    font-size: max(20px, 3.7vw);
+    margin-bottom: max(10px, 1.5vw);
+}
+.localization .text-localization .text-content p {
+    font-size: max(14px, 1vw);
+}
+.localization  .gps{
+    width: 50%;
+}
+.localization .gps img{
+    width: 100%;
+}
+
+
+
+
 
 /*Tela 4*/
 
