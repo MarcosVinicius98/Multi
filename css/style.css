@@ -5,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main ul {
+header ul, main ul {
     list-style: none;
 }
 
@@ -51,12 +51,14 @@ header > .container{
 }
 
 header .open-menu {
+    z-index: 3;
     cursor: pointer;
     color: white;
     font-size: max(16px, 2vw);
 }
 header nav.menu {
-    position: absolute;
+    z-index: 2;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #1c1c1c;
@@ -1043,7 +1045,7 @@ section.features .features-wrapper {
 
 .features-wrapper .features-text ul {
     padding: max(15px, 2vw) 0;
-    list-style: circle;
+    list-style: disc;
     color: gray;
 }
 
