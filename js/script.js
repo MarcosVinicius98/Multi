@@ -1,3 +1,8 @@
+$('.open-menu').click(function(){
+    $('.menu-wrapper').slideToggle()
+    $('main')[0].classList.toggle('d-none')
+    $('footer')[0].classList.toggle('d-none')
+})
 $(function(){
     $('.slide-content').slick({
         slidesToShow: 1,

@@ -14,15 +14,17 @@
         <div class="container">
             <div class="logo" style="background-image: url('./images/grupovermelho.svg');"></div>
             <i class="fa-sharp fa-solid fa-bars open-menu"></i>
-            <nav class="menu">
-                <ul>
-                    <li><i class="fa-solid fa-arrow-right"></i><a href="#">Home</a></li>
-                    <li><i class="fa-solid fa-arrow-right"></i><a href="#">Empresa</a></li>
-                    <li><i class="fa-solid fa-arrow-right"></i><a href="#">Empreendimentos</a></li>
-                    <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contato</a></li>
-                    <li><i class="fa-solid fa-arrow-right"></i><a href="#">Trabalhe conosco</a></li>
-                </ul>
-            </nav>
+            <div class="menu-wrapper">
+                <nav class="menu">
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Home</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Empresa</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Empreendimentos</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contato</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Trabalhe conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -32,17 +34,17 @@
                 <h1>Residencial Paradiso Del Mare</h1>
                 <div class="list-wrapper">
                     <ul>
-                        <li><a href="">Progresso da obra</a></li>
-                        <li><a href="">Caracteristicas</a></li>
-                        <li><a href="">Galeria</a></li>
-                        <li><a href="">Planta baixa</a></li>
-                        <li><a href="">Localização</a></li>
+                        <li><a href="#progress">Progresso da obra</a></li>
+                        <li><a href="#features">Caracteristicas</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#">Planta baixa</a></li>
+                        <li><a href="#localization">Localização</a></li>
                     </ul>
                 </div>
             </div>
        </section>
 
-       <section class="enterprise-info">
+       <section class="enterprise-info" id="progress">
             <div class="container">
                 <div class="enterprise-details">
                     <div class="enterprise-detail">
@@ -143,7 +145,7 @@
             </div>
        </section>
 
-       <section class="features">
+       <section class="features" id="features">
             <div class="features-wrapper">
                 <div class="features-img" style="background-image: url('./images/building3.png');"></div>
                 <div class="features-text">
@@ -213,7 +215,7 @@
             </div>
         </section>
 
-        <section class="gallery-enterprise">
+        <section class="gallery-enterprise" id="gallery">
             <div class="slides-enterprise">
                 <div class="enterprise-img">
                     <div class="bg-gallery" style="background-image:url('./images/gallery.PNG')">
@@ -254,7 +256,7 @@
             </div>
         </section>
 
-        <section class="localization">
+        <section class="localization" id="localization">
             <div class="text-localization">
                 <div class="text-content">
                     <h2>Localização</h2>
