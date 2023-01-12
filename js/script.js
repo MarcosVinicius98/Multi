@@ -21,13 +21,35 @@ $(function(){
                 slidesToShow: 2,
               }
             },
-        ]
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                centerMode:true,
+              }
+            },
+        ],
+       
     });
 
     $('.company-slide').slick({
         slidesToShow: 4,
         prevArrow: '.company-left',
         nextArrow: '.company-right',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+        ],
     });
 
     $('.slides-gallery').slick({

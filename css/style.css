@@ -19,7 +19,7 @@ header ul, main ul {
     font-size: max(10px, 1vw);
     height: max(20px, 3vw);
     width: max(20px, 3vw);
-    margin: max(10px, .6vw);
+    margin: max(5px, .6vw);
     cursor: pointer;
     color: white;
     border: 1px solid white;
@@ -41,7 +41,7 @@ header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: max(600px, 97vw);
+    width: 97vw;
     padding: 0 max(15px, 2vw);
     padding-top: max(20px, 2.5vw);
 }
@@ -98,8 +98,7 @@ header nav.menu ul li i{
     margin-right: max(10px, 0.8vw);
     color: white;
     position: absolute;
-    left: min(-15px, -5vw);
-    top: max(10px, 1vw);
+    left: -15%;
 }
 header nav.menu ul li:hover i{
     display: flex;
@@ -212,7 +211,7 @@ footer .copyright img{
 
 .bg-clip .bg-cover{
     width: 74%;
-    min-height: 60vw;
+    min-height: max(60vw, 60vh);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -393,6 +392,7 @@ footer .copyright img{
 
 .slides-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: max(20px, 5vw);
@@ -444,7 +444,7 @@ footer .copyright img{
     font-size: max(10px, 1vw);
     height: max(20px, 3vw);
     width: max(20px, 3vw);
-    margin: max(10px, .6vw);
+    margin: max(5px, .6vw);
     cursor: pointer;
     color: white;
     border: 1px solid white;
@@ -463,7 +463,7 @@ footer .copyright img{
 }
 
 .slide-wrapper {
-    height: max(43vw, 40vh);
+    height: max(43vw, 60vh);
     position: relative;
     overflow: hidden;
 }
@@ -520,7 +520,7 @@ footer .copyright img{
 }
 
 .slide-bg .text-wrapper h2 {
-    font-size: max(20px, 1.5vw);
+    font-size: max(15px, 1.5vw);
 }
 
 .slide-bg .text-wrapper i {
@@ -624,7 +624,7 @@ section.releases .container {
     width: 55%;
     background-position: center;
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,7 +681,7 @@ section.releases .container {
 
 section.company {
     padding-top: max(100px, 10vw);
-    padding-bottom: max(200px, 15vw);
+    padding-bottom: max(80px, 15vw);
     background: #1c1c1c;
     color: white;
 }
@@ -784,7 +784,7 @@ section.enterprises h1 {
     text-align: center;
     color: white;
     font-size: max(20px, 6vw);
-    padding-bottom: max(20px, 2vw);
+    padding-bottom: max(10px, 2vw);
 }
 section .enterprises-list .enterprises-nav ul{
     display: flex;
@@ -854,7 +854,7 @@ section .enterprises-list .all-enterprises{
     font-size: max(10px, 1vw);
     height: max(20px, 3vw);
     width: max(20px, 3vw);
-    margin: max(10px, .6vw);
+    margin: max(5px, .6vw);
     cursor: pointer;
     color: white;
     border: 1px solid white;
@@ -881,7 +881,7 @@ section .enterprises-list .all-enterprises{
 /*Tela 4*/
 
 section.enterprise-bg {
-    min-height: 35vw;
+    min-height: max(35vw, 50vh);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -902,7 +902,7 @@ section.enterprise-bg h1 {
 section.enterprise-bg .list-wrapper {
     position: absolute;
     width: 100%;
-    bottom: -3vw;
+    top: 90%;
     left: 0;
     display: flex;
     justify-content: center;
@@ -919,9 +919,9 @@ section.enterprise-bg ul {
 }
 
 section.enterprise-bg ul li {
-    padding: max(8px, 1vw) max(8px, 3vw);
+    padding: max(4px, 1vw) max(4px, 3vw);
     border-right: max(1px, .1vw) solid #494949;
-    font-size: max(14px, 1vw);
+    font-size: max(12px, 1vw);
 }
 
 section.enterprise-bg ul li:nth-last-of-type(1) {
@@ -946,10 +946,11 @@ section.enterprise-info .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: max(20px, 2vw) 0;
 }
 
 .enterprise-info .enterprise-details .wrapper {
-    margin-bottom: max(10px, 1vw);
+    margin-bottom: max(5px, 1vw);
 }
 .enterprise-info .enterprise-details span {
     font-weight: bolder;
@@ -1060,7 +1061,7 @@ section.features .features-wrapper {
 
 .features-wrapper .features-img {
     width: 52%;
-    height: 65vw;
+    min-height: 65vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1125,7 +1126,7 @@ section.features .features-wrapper {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 58vw;
+    height: max(58vw, 50vh);
 }
 section.gallery-enterprise {
     position: relative;
@@ -1136,7 +1137,7 @@ section.gallery-enterprise .gallery-text {
     top: 27%;
     left: 5%;
     background-color: rgba(255, 255, 255, 0.575);
-    max-width: 30%;
+    width: 35%;
     padding: max(20px, 3vw);
 }
 section.gallery-enterprise .gallery-text h2{
@@ -1189,8 +1190,9 @@ section.gallery-enterprise .gallery-text .right-arrow {
     justify-content: center;
     list-style: none;
     position: absolute;
-    top: 54vw;
-    left: 45vw;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
 }
 .slick-dotted li{
     margin: 0 max(3px, .1vw);
@@ -1212,6 +1214,7 @@ li.slick-active button{
 }
 .localization{
     display: flex;
+    flex-wrap: wrap;
     background-color: #f4f4f5;
 }
 .localization .text-localization{
@@ -1438,3 +1441,151 @@ section.form-contact form input[type=file]{
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .bg-content ul {
+        position: initial;
+        margin-top: max(60px, 4vw);
+        justify-content: center;
+
+    }
+
+    .bg-content .bg-slides {
+        position: initial;
+        margin-top: max(30px, 3vw);
+    }
+
+    .about-us p {
+        width: 100%;
+    }
+
+    .why-us-title h2 {
+        width: 100%;
+    }
+
+    .slides-wrapper h2 {
+        width: 100%;
+    }
+
+    .ventures-text {
+        width: 100%;
+        margin-top: max(10px, 1vw);
+    }
+    
+    .our-ventures .slide-wrapper {
+        height: 80vh;
+    }
+
+
+    .slides-wrapper .ventures-text {
+        padding-left: 0;
+    }
+
+    .arrows {
+        width: initial;
+    }
+
+    .why-us .card {
+        width: max(80%, 400px);
+        margin: 10px;
+    }
+
+    .why-us .card-content img {
+        width: 30%;
+    }
+
+    section.releases {
+        background-size: 100% 50%;
+    }
+
+    .releases .releases-img {
+        width: 90%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    .releases-text {
+        width: 90%;
+    }
+
+    .footer-form .input-wrapper {
+        width: 100%;
+        margin-bottom: max(10px, 1vw);
+    }
+
+    .footer-content {
+        justify-content: space-around;
+    }
+
+    /* tela 2 */
+
+    .company .company-text h3 {
+        width: 100%;
+    }
+
+    .company .history-text {
+        width: 100%;
+        margin-top: max(10px, 1vw);
+    }
+
+    .gallery-wrapper .arrows {
+        width: initial;
+    }
+
+    section.enterprises {
+        padding-top: 70px;
+    }
+
+    
+    section .enterprises-list .enterprises-nav ul {
+        max-width: initial;
+    }
+
+    .all-enterprises .slide-wrapper {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .enterprise-details .enterprise-detail {
+        margin-bottom: 10px;
+    }
+    
+    .enterprise-info .enterprise-progress h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .enterprise-info .enterprise-progress .progress-bars {
+        width: 70%;
+    }
+
+    .features-wrapper .features-img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .features-wrapper .features-text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .features-wrapper .features-text ul {
+        list-style-position: inside;
+    }
+
+    section.gallery-enterprise .gallery-text {
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .localization .text-localization {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .localization .gps {
+        width: 100%;
+    }
+}   
