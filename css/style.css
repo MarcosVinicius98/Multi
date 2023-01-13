@@ -41,8 +41,8 @@ header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 97vw;
-    padding: 0 max(15px, 2vw);
+    width: 96.5vw;
+    padding: 2vw;
     padding-top: max(20px, 2.5vw);
 }
 
@@ -236,7 +236,7 @@ footer .copyright img{
 
 .bg-content ul li {
     border-bottom: max(1px, .1vw) groove rgba(255, 255, 255, 0.822);
-    padding: max(15px, 1vw);
+    padding: max(10px, 1vw);
     font-size: max(15px, 1.2vw);
 }
 
@@ -303,7 +303,7 @@ footer .copyright img{
 
 .hover-button {
     margin: max(10px, 1.5vw) 0;
-    padding: max(15px, 1.5vw);
+    padding: max(10px, 1.5vw);
     border-radius: max(2px, .4vw);
     border: max(1px, .1vw) solid white;
     letter-spacing: max(2px, .1vw);
@@ -1251,12 +1251,13 @@ li.slick-active button{
 /* Tela 5 */
 .text-info{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: max(100px, 10vw);
 }
 section.info {  
     background-color: #1c1c1c;
-    height: max(60vw, 80vh);
+    height: calc(60vw + 10vh);
 }
 
 section.info > .container {
@@ -1265,8 +1266,8 @@ section.info > .container {
 }
 section.info h2 {
     color: white;
-    font-size: max(10px, 2.3vw);
-    max-width: 20vw;
+    font-size: max(14px, 2.3vw);
+    width: 20vw;
 }
 section.info .address {
     padding: 0 max(5px, 1vw);
@@ -1321,6 +1322,7 @@ section.form-contact form input[type=text]{
 }
 .email-tel {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 section.form-contact form .d50{
@@ -1586,6 +1588,24 @@ section.form-contact form input[type=file]{
     }
 
     .localization .gps {
+        width: 100%;
+    }
+
+    section.info {
+        height: auto;
+    }
+
+    section.info h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section.info .address {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    section.form-contact form .d50 {
         width: 100%;
     }
 }   
