@@ -35,13 +35,13 @@ header ul, main ul {
 header {
     position: absolute;
     z-index: 1;
+    width: 100%;
 }
 
 header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96.5vw;
     padding: 2vw;
     padding-top: max(20px, 2.5vw);
 }
@@ -57,7 +57,7 @@ header .open-menu {
     z-index: 3;
     cursor: pointer;
     color: white;
-    font-size: max(16px, 2vw);
+    font-size: max(20px, 2vw);
 }
 .menu-wrapper {
     z-index: 2;
