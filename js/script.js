@@ -73,3 +73,7 @@ $(function(){
     })
 
 })
+
+$('.plus-button').click(function(){
+  $(this.nextElementSibling).slideToggle()
+})
