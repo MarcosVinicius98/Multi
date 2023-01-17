@@ -17,8 +17,8 @@ header ul, main ul {
     align-items: center;
     justify-content: center;
     font-size: max(10px, 1vw);
-    height: max(20px, 3vw);
-    width: max(20px, 3vw);
+    height: max(30px, 3vw);
+    width: max(30px, 3vw);
     margin: max(5px, .6vw);
     cursor: pointer;
     color: white;
@@ -27,15 +27,21 @@ header ul, main ul {
 }
 
 .container {
-    padding: max(10px, 2vw);
+    padding: max(25px, 2vw);
     max-width: max(600px, 90%);
     margin: 0 auto;
 }
 
 header {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
+    transition: ease .4s;
+}
+
+.header-bg {
+    background-color: #1c1c1c;
+    z-index: 4;
 }
 
 header > .container{
@@ -54,13 +60,13 @@ header > .container{
 }
 
 header .open-menu {
-    z-index: 3;
+    z-index: 5;
     cursor: pointer;
     color: white;
-    font-size: max(20px, 2vw);
+    font-size: max(25px, 2vw);
 }
 .menu-wrapper {
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -287,7 +293,7 @@ footer .copyright img{
     left: 30%;
     top: max(15px, 2.5vw);
     list-style: none;
-    z-index: 2;
+    z-index: 1;
 }
 
 .bg-content ul li {
@@ -359,11 +365,11 @@ footer .copyright img{
 
 .hover-button {
     margin: max(10px, 1.5vw) 0;
-    padding: max(10px, 1.5vw);
+    padding: max(20px, 1.5vw);
     border-radius: max(2px, .4vw);
     border: max(1px, .1vw) solid white;
     letter-spacing: max(2px, .1vw);
-    font-size: max(15px, 1vw);
+    font-size: max(20px, 1vw);
     background: transparent;
     color: white;
     text-decoration: none;
@@ -422,6 +428,41 @@ footer .copyright img{
     margin-right: max(5px, .5vw);
 }
 
+.mobile-bg {
+    color: white;
+    padding-top: 50px;
+    display: none !important;
+}
+
+.mobile-bg .slide-bg {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-bg .bg-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-bg .slide-bg h4 {
+    font-size: max(15px, 1.2vw);
+    letter-spacing: max(2px, .3vw);
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.mobile-bg .slide-bg h3 {
+    font-size: max(50px, 8.5vw);
+    line-height: .9;
+}
+
 .about-us {
     padding: max(20px, 4vw) 0;
     background-position: 0% 50%;
@@ -443,6 +484,7 @@ footer .copyright img{
 .our-ventures {
     background-image: linear-gradient(to bottom, #1c1c1c 65%, white 10%);
     padding: max(20px, 2vw) 0;
+    position: relative;
 }
 
 .slides-wrapper {
@@ -450,7 +492,7 @@ footer .copyright img{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: max(20px, 5vw);
+    padding: max(25px, 5vw);
     color: white;
 }
 
@@ -497,8 +539,8 @@ footer .copyright img{
     align-items: center;
     justify-content: center;
     font-size: max(10px, 1vw);
-    height: max(20px, 3vw);
-    width: max(20px, 3vw);
+    height: max(30px, 3vw);
+    width: max(30px, 3vw);
     margin: max(5px, .6vw);
     cursor: pointer;
     color: white;
@@ -748,10 +790,12 @@ section.company {
 .company .company-text h3 {
     width: 45%;
     font-size: max(20px, 2.5vw);
+    font-weight: 600;
 }
 
 .company .history-text {
     width: 50%;
+    padding: 15px 0;
 }
 
 .company .history-text p {
@@ -761,7 +805,7 @@ section.company {
 
 .company-slides > .container{
     position: relative;
-    top: min(-50px, -9vw);
+    top: -9vw ;
 }
 
 .company-slides .company-slide {
@@ -813,7 +857,6 @@ section.company {
     font-size: max(14px, 1vw);
     padding-top: max(30px, 4vw);
     padding-bottom: max(30px, 1vw);
-    line-height: max(1.3, .3vw);
 }
 
 .company-slide .card-content img {
@@ -866,10 +909,11 @@ section .enterprises-list .enterprises-nav ul .actived  a {
 section .enterprises-list .all-enterprises{
     display: flex;
     flex-wrap: wrap;
-    padding: max(20px, 4.5vw) max(40px, 7vw) max(20px, 5vw) max(40px, 7vw);
+    padding: max(20px, 4.5vw) 0;
     justify-content: space-between;
 
 }
+
 .all-enterprises .slide-wrapper{
     width: 31%;
     margin: max(10px, 1vw) 0;
@@ -913,7 +957,7 @@ section .enterprises-list .all-enterprises{
 }
 
 .gallery-img {
-    padding: 0 max(20px, 2vw);
+    padding: 0 max(10px, 2vw);
 }
 
 .gallery-img .bg-gallery {
@@ -1155,7 +1199,7 @@ section.features .features-wrapper {
 
 .features-wrapper .features-arrows {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: absolute;
     top: 38%;
     right: 0;
@@ -1380,12 +1424,6 @@ li.slick-active button{
     width: 100%;
 }
 
-.text-info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: max(100px, 10vw);
-}
 section.info {  
     background-color: #1c1c1c;
     height: calc(60vw + 10vh);
@@ -1395,13 +1433,25 @@ section.info > .container {
     max-width: max(600px, 90%);
     margin: 0 auto;
 }
+
+.text-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: max(100px, 10vw);
+    max-width: max(600px, 90%);
+    margin: 0 auto;
+}
+
 section.info h2 {
     color: white;
-    font-size: max(14px, 2.3vw);
+    font-size: max(16px, 2vw);
+    font-weight: 600;
     width: 20vw;
 }
-section.info .address {
-    padding: 0 max(5px, 1vw);
+section.info .address,
+section.info .contact {
+    padding: 10px max(5px, 1vw);
 }
 section.info .address h3, .contact h3{
     color: white;
@@ -1411,6 +1461,7 @@ section.info .address h3, .contact h3{
     text-transform: uppercase;
     margin-bottom: 1.3vw;  
 }
+
 section.info p {
     color: #bdbdbd;
     font-size: max(10px, .8vw);
@@ -1420,6 +1471,8 @@ section.form-contact {
     display: flex;
     justify-content: center;
     padding-top: max(10px, 5vw);
+    max-width: max(600px, 90%);
+    margin: 0 auto;
 }
 #placeholder-text::placeholder {
     text-transform: uppercase; 
@@ -1490,6 +1543,7 @@ section.form-contact form span a{
 
 section.info .text-info .info{
     width: 60%;
+    padding: 10px 0;
 }
 section.form-contact form select{
     width: 100%;
@@ -1512,46 +1566,65 @@ section.form-contact form input[type=file]{
 }
 
 @media screen and (max-width: 768px) {
-    .bg-content ul {
-        position: initial;
-        margin-top: max(60px, 4vw);
-        justify-content: center;
-
+    header {
+        background-color: #1c1c1c;
     }
 
-    .bg-content .bg-slides {
-        position: initial;
-        margin-top: max(30px, 3vw);
+    .bg-clip {
+        display: none;
+    }
+
+    .mobile-bg {
+        display: block !important;
     }
 
     .about-us p {
         width: 100%;
     }
 
-    .why-us-title h2 {
-        width: 100%;
+    .our-ventures .slide-wrapper {
+        height: 80vh;
     }
 
     .slides-wrapper h2 {
         width: 100%;
     }
 
-    .ventures-text {
+    .slides-wrapper .ventures-text {
         width: 100%;
         margin-top: max(10px, 1vw);
-    }
-    
-    .our-ventures .slide-wrapper {
-        height: 80vh;
+        padding: 15px 0;
     }
 
+    .our-ventures .slides-quant {
+        display: none;
+    }
 
-    .slides-wrapper .ventures-text {
-        padding-left: 0;
+    .our-ventures .arrows {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slides-ventures {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .our-ventures .arrows .left,
+    .our-ventures .arrows .right {
+        z-index: 1;
     }
 
     .arrows {
         width: initial;
+    }
+
+    .why-us-title h2 {
+        width: 100%;
     }
 
     .why-us .card {
@@ -1595,6 +1668,42 @@ section.form-contact form input[type=file]{
         margin-top: max(10px, 1vw);
     }
 
+    section.company {
+        padding-bottom: 0;
+    }
+
+    .company-slides > .container {
+        top: 0;
+    }
+
+    .company-slides .company-slide {
+        width: 90%;
+    }
+
+    .company-slide .slide-card {
+        background-color: #1c1c1c;
+        color: white;
+        border: 5px solid white;
+    }
+
+    .company-slide .slide-card h3 {
+        color: red;
+    }
+
+    .company-slide .slide-card i {
+        color: white;
+    }
+
+    .company-slides .arrow {
+        top: 50%;
+    }
+    
+    .company-slides .arrow .arrow-left,
+    .company-slides .arrow .arrow-right {
+        color: black;
+        border-color: black;
+    }
+
     .gallery-wrapper .arrows {
         width: initial;
     }
@@ -1610,6 +1719,23 @@ section.form-contact form input[type=file]{
     .all-enterprises .slide-wrapper {
         width: 100%;
         height: 80vh;
+    }
+
+    section.enterprise-bg .list-wrapper {
+        top: 75%;
+    }
+    
+    section.enterprise-bg ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.enterprise-bg ul li {
+        border: none;
+    }
+
+    .enterprise-info .enterprise-details {
+        flex-direction: column;
     }
 
     .enterprise-details .enterprise-detail {
@@ -1656,6 +1782,10 @@ section.form-contact form input[type=file]{
         width: 100%;
     }
 
+    .localization .text-localization .text-content {
+        width: 80%;
+    }
+
     section.info {
         height: auto;
     }
@@ -1663,6 +1793,10 @@ section.form-contact form input[type=file]{
     section.info h2 {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    section.info .text-info .info {
+        width: 100%;
     }
 
     section.info .address {

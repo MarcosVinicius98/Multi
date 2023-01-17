@@ -1,3 +1,8 @@
+window.addEventListener('scroll', () => {
+  console.log()
+  window.scrollY > 100 ? $('header')[0].classList.add('header-bg') : $('header')[0].classList.remove('header-bg')
+})
+
 $('.open-menu').click(function(){
     $('.menu-wrapper').slideToggle()
     $('main')[0].classList.toggle('d-none')
@@ -8,6 +13,12 @@ $(function(){
         slidesToShow: 1,
         prevArrow: '.arrow-left',
         nextArrow: '.arrow-right',
+    });
+
+    $('.mobile-bg').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
     });
 
     $('.slides-ventures').slick({
@@ -31,7 +42,6 @@ $(function(){
               breakpoint: 650,
               settings: {
                 slidesToShow: 1,
-                centerMode:true,
               }
             },
         ],
@@ -47,6 +57,12 @@ $(function(){
               breakpoint: 768,
               settings: {
                 slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
               }
             },
         ],
