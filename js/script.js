@@ -1,5 +1,4 @@
 window.addEventListener('scroll', () => {
-  console.log()
   window.scrollY > 100 ? $('header')[0].classList.add('header-bg') : $('header')[0].classList.remove('header-bg')
 })
 
